@@ -1,0 +1,286 @@
+body{
+    background: #464444;
+    background-image: linear-gradient(to right, #202528, #464444);
+}
+
+h1 img{
+    width: 70%;
+}
+header{
+    padding: 20px 0;
+    box-shadow: 0 1px 4px 2px #ffffff, inset 0 0 20px #ffffff;
+    background-image: linear-gradient(to right, #8da4b3, #546578);
+    border-radius: 0 0 25px 25px;
+}
+
+.caixa-logo{
+    width: 50%;
+    white-space: nowrap;
+    color: #000000;
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #333;
+    font-family:Squada system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+
+.caixa{
+    width: auto;
+    margin: 0 auto;
+    
+}
+
+.caixa2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.menu:hover{
+    color: #ffffff;
+    transition: 0.3s;
+}
+.menu:active{
+    color: #088C19;
+}
+
+nav{
+    top: 70px;
+    right: 0;
+}
+
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+    text-shadow: 2px 2px 2px #333
+}
+nav ul{
+    position: relative;
+    width: auto;
+}
+
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+    
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    
+    box-shadow: 2px 4px 2px rgb(255, 255, 255);
+    background: #ffffff;
+}
+
+.produtos li:hover{
+    border-color: #C78C19;
+    color: #C78C19;
+    cursor: pointer;
+
+}
+
+.produtos li:active{
+    border-color: #088C19; 
+    color: #088C19;
+}
+
+.produtos li:hover h2{
+    font-size: 35px;
+    transition: 0.3s;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.produto_descricao{
+    font-size: 18px;
+
+}
+.produto_preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+footer{
+    background-image: linear-gradient(to right, #8da4b3, #546578);
+    text-align: center;
+    box-shadow: 0 1px 4px 4px #ffffff, inset 0 0 20px #ffffff;
+    padding: 40px 0;
+    border-radius: 25px 25px 0 0;
+}
+
+footer img{
+    width: 10%;
+}
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0;
+}
+/*--- Contato ---*/
+
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: #ffffff
+}
+
+.main .tabela{
+    justify-content: center;
+    
+}
+
+
+form{
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+form label, form legend{
+    display: block;
+    font-size: 17px;
+    margin: 0 0 10px;
+}
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    width: 70%;
+    font-size: 17px;
+    border: none;
+    transition: .2s;
+}
+.input-padrao:hover{
+    box-shadow: 0 0 4px 4px #ffffff;
+}
+.checkbox{
+    margin: 20px 0;
+}
+.enviar{
+    width: 60%;
+    padding: 15px 0;
+    background:#088C19 ;
+    font-weight: bold;
+    font-size: 17px;
+    border: none;
+    border-radius: 25px;
+    transition: .3s;
+    margin-bottom: 30px;
+    
+}
+.enviar:hover{
+    color: #ffffff;
+    box-shadow: 0 0 4px 4px #ffffff, inset 0 0 20px #ffffff;
+    cursor: pointer;
+}
+
+.tabela{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    font-size: 17px;
+}
+.tabela legend{
+    margin: 15px 0;
+}
+
+.tabela select{
+    font-size: 17px;
+}
+.tabela select:hover{
+    cursor: pointer;
+}
+
+table{
+
+    margin: 40px 40px;
+    
+}
+thead{
+    background: #546578;
+    font-weight: bold;
+    
+}
+td, th{
+    border: 1px solid #ffffff;
+    padding: 15px 15px;
+    
+    
+    
+}
+
+@media screen and (max-width:1000px) {
+    main{
+        width: auto;
+    }
+    .caixa2{
+        flex-direction: column;
+    }
+   
+    .produtos{  
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .produtos li{
+        width: 30%;
+        margin-bottom: 20px;
+    }
+
+    .pro{
+        width:100%;
+    }
+    .caixa-banner{
+        width: 100%;
+        margin: 20px;
+    }
+    .principal{
+        padding-bottom: 20px;
+        margin-right: 0;
+        font-size: 20px;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .caixa-logo{
+        width: auto;
+        margin-bottom: 30px;
+    }
+}

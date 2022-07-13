@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato - Barbearia LeyAS</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <div class="caixa2">
+                    <h1> <img src ="logo.png"></h1>
+                    <p class="caixa-logo">Barbearia LeyAS</p>
+                    <nav>
+                        <ul>
+                            <li ><a href="index.html" class="menu">Home</a></li>
+                            <li><a href="produtos.html"  class="menu">Produtos</a></li>
+                            <li><a href="contato.html"  class="menu">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <form>
+                
+                <label for="nomesobrenome">Nome e sobrenome:</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(DDD) XXXXX - XXXX">
+
+                <Label for="mensagem" >Mensagem</Label>
+                <textarea cols="60" rows="10" id="mensagem" class="input-padrao" ></textarea >
+                <fieldset>
+                    <legend>Como prefere o nosso Contato?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+                    
+
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+                    
+
+                    <label for="radio-whatsapp"> <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                </fieldset>
+                
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de Receber nossas novidades por Email?</label>
+            </form>
+                <div class="tabela">
+                    <fieldset>
+                        <legend>Qual horário prefere ser Atendido?</legend>
+                        <select >
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </fieldset>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dia</th>
+                                <th>Horário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Segunda-feira</td>
+                                <td>08h ~ 20h</td>
+                            </tr>
+                            <tr>
+                                <td>Quarta-feira</td>
+                                <td>08h ~ 20h</td>
+                            </tr>
+                            <tr>
+                                <td>Sexta-feira</td>
+                                <td>08h ~ 20h</td>
+                            </tr>
+                        </tbody>
+                </div>
+                </table>
+            <Input type="submit" value="Enviar Formulário" class="enviar"></Input>
+        </main>
+
+        
+        <footer>
+            <img src="logo-branco.png" alt="logo em cor branco">
+            <p class="copyright">&copy; Copyright Barbearia LeyAS - 2022 </p>
+
+        </footer>
+    </body>
+</html>
