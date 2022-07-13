@@ -38,6 +38,10 @@ header{
     text-align: center;
 }
 
+.caixa2 p {
+    text-align: justify;
+    
+}
 .menu:hover{
     color: #ffffff;
     transition: 0.3s;
@@ -260,7 +264,7 @@ td, th{
     }
 
     .produtos li{
-        width: 30%;
+        width: 40%;
         margin-bottom: 20px;
     }
 
